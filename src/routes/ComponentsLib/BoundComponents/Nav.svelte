@@ -1,5 +1,5 @@
 <script>
-    
+
     import Button from "../GeneralComponents/Button.svelte"
     import NavSlider from "./NavSlider.svelte";
     import { showSlider, navSelections } from "./clickOutside";
@@ -41,7 +41,7 @@
                 <div class="w-6 border-b-black border-b-2 "></div>
             </div>
         </div>
-        
+
         <div class="w-full">
             <p class="font-bold sm:text-xl text-black">{$navSelections}</p>
         </div>
@@ -63,7 +63,7 @@
     {:else if $navSelections === "Complaints"}
         <Complaint />
     {/if}
-    
+
 </div>
 
 <NavSlider />

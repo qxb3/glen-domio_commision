@@ -17,7 +17,7 @@ export const onSnapsBgyID = writable([]);
 export const compareIDvalue = writable("");
 export const cordionLogic = writable(false);
 
-//barangay certificate 
+//barangay certificate
 export const onSnapsBgyCert = writable([]);
 export const showCertEditLogic = writable(false);
 export const showCertAddModal = writable(false);

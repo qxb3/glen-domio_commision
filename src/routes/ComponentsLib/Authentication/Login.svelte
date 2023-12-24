@@ -21,8 +21,8 @@
     loginStore.showLoading = true;
     await signInWithEmailAndPassword(
       auth,
-      loginStore.email.value,
-      loginStore.password.value
+      loginStore.email,
+      loginStore.password
     )
       .then((userCred) => {
         localStorage.setItem("uid", userCred.user.uid);
@@ -47,7 +47,7 @@
           TYPE="email"
           PLACEHOLDER="Email"
           TITLE="Email"
-          bind:this={loginStore.email}
+          bind:value={loginStore.email}
         />
       </div>
       <div class="flex flex-col gap-2">
@@ -56,7 +56,7 @@
           TYPE="password"
           PLACEHOLDER="Password"
           TITLE="Password"
-          bind:this={loginStore.password}
+          bind:value={loginStore.password}
           class="p-2 bg-gray-50 rounded-lg"
         />
       </div>

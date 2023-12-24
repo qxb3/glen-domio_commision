@@ -1,9 +1,8 @@
 <script>
-   
+
     import Login from "./ComponentsLib/Authentication/Login.svelte";
     import Nav from "./ComponentsLib/BoundComponents/Nav.svelte";
 
-    
     //database calls and hooks
     import { auth } from "./db/firebase";
     import {onAuthStateChanged} from "firebase/auth";
@@ -28,5 +27,5 @@
     {:else}
         <Login />
     {/if}
-    
+
 </main>
